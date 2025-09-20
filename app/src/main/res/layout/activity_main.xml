@@ -5,7 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/botao">
+
 
     <RadioGroup
         android:id="@+id/rdgPrincipal"
@@ -14,7 +16,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="20dp"
-        android:background="@color/red_1"
+
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,7 +30,7 @@
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="@color/red_2"
+            android:background="@drawable/btncor1"
             android:text="@string/texto_alternativa_a" />
 
         <RadioButton
@@ -36,7 +38,7 @@
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="@color/red_3"
+            android:background="@drawable/btncor1"
             android:text="@string/texto_alternativa_b" />
 
         <RadioButton
@@ -44,14 +46,14 @@
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="@color/red_4"
+            android:background="@drawable/btncor1"
             android:text="@string/texto_alternativa_c" />
 
         <RadioButton
             android:id="@+id/rbD"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:background="@color/red_5"
+            android:background="@drawable/btncor1"
             android:gravity="center"
             android:text="@string/texto_alternativa_d" />
     </RadioGroup>
@@ -62,16 +64,17 @@
         android:layout_height="55dp"
         android:text="Responder"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/btncor2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rdgPrincipal" />
 
     <TextView
-        android:id="@+id/texto_pergunta_1"
+        android:id="@+id/txvPergunta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
-        android:text="TextView"
+        android:text="Espaço de pergunta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
